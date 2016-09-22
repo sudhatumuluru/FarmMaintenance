@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FarmMaintenance</string>
+    <string name="activity_label">Farm Maintenance</string>
+    <string name="fan_on">FAN ON</string>
+    <string name="sprinkler_on">Sprinkler ON</string>
+    <string name="btn_turnfan">Turn FAN</string>
+</resources>
