@@ -26,15 +26,8 @@ public class FarmMaintenance extends AppCompatActivity {
                 Toast.LENGTH_LONG).show();
         if(iotmode.equals("FAN_ON")){
             fan_sprinkler_on.setVisibility(View.GONE);
-           // fan_on.setEnabled(true);
-            //fan_sprinkler_on.setEnabled(false);
+
         }
-        /*else
-        {
-            fan_on.setVisibility(View.GONE);
-            //fan_sprinkler_on.setEnabled(true);
-            //fan_on.setEnabled(true);
-        } */
     }
 
     public void onFanOn(){
