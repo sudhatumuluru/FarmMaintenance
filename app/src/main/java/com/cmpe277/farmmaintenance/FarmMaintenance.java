@@ -2,7 +2,9 @@ package com.cmpe277.farmmaintenance;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class FarmMaintenance extends AppCompatActivity {
 
@@ -20,13 +22,23 @@ public class FarmMaintenance extends AppCompatActivity {
 
     protected void onResume(){
         super.onResume();
+        Toast.makeText(FarmMaintenance.this, "This app shows the status of devices",
+                Toast.LENGTH_LONG).show();
         if(iotmode.equals("FAN_ON")){
-            fan_on.setEnabled(true);
-            fan_sprinkler_on.setEnabled(false);
-        }else
-        {
-            fan_sprinkler_on.setEnabled(true);
-            fan_on.setEnabled(true);
+            fan_sprinkler_on.setVisibility(View.GONE);
+           // fan_on.setEnabled(true);
+            //fan_sprinkler_on.setEnabled(false);
         }
+        /*else
+        {
+            fan_on.setVisibility(View.GONE);
+            //fan_sprinkler_on.setEnabled(true);
+            //fan_on.setEnabled(true);
+        } */
+    }
+
+    public void onFanOn(){
+        Toast.makeText(FarmMaintenance.this, "Only Fan is switched on now",
+                Toast.LENGTH_LONG).show();
     }
 }

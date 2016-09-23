@@ -35,7 +35,8 @@
         android:layout_margin="50dp"
         android:padding="0dp"
         android:color="@color/pink"
-        android:layout_weight="0.25" />
+        android:layout_weight="0.25"
+        android:onClick="onFanOn"/>
 
 
     <Button
@@ -54,6 +55,7 @@
         android:color="@color/purple"
         android:layout_weight="0.23"
         android:padding="0dp"
+        android:onClick="onFanSp"
         />
 
 
